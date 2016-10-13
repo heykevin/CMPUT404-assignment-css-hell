@@ -1,0 +1,146 @@
+pre {
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: "Book Antiqua", "Goudy Old Style", serif ;
+  background-color: rgb(30, 30, 30);
+  color: rgb(212, 212, 200);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    color: darkred;
+}
+
+h1 {
+    font-size: 300%;
+    margin-top:5%;
+    text-shadow: 2px 2px red;
+}
+
+h2 {
+    text-decoration: underline; 
+    margin-top:5%;
+    margin-bottom:2%;
+}
+
+a:link {
+    color:rgb(173, 145, 120);
+}
+
+hr {
+    width: 45%; 
+    margin: 2em auto; 
+    visibility: hidden;
+}
+
+p {
+    text-align: justify;
+    text-indent:4%;
+    line-height: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border: 1px solid rgb(212, 212, 200);
+    margin: 0 auto;
+}
+
+td {
+    height: 2em;
+    vertical-align: middle !important;
+}
+
+img {
+    border:4px double rgb(212, 212, 200);
+    text-align:center;
+    margin: 0 auto;
+    text-indent:0%;
+    /* inverted colours are spooky */
+    filter: invert(100%);
+}
+
+/*Dracula Specific*/
+
+.figcenter {
+    margin: 0 auto;
+    text-align:center;
+    text-indent:0%;
+}
+
+.c, .cb, .cbs {
+    text-align:center;
+    text-indent:0%;
+    font-weight:bold;
+}
+
+.r {
+    text-align: right;
+}
+
+/*From Dracula HTML*/
+.un {
+    text-decoration:underline;
+    text-indent:0%;
+    margin:2% auto 2% 15%;
+}
+
+/* Lovecraft specific */
+.bk3 {
+    float: left;
+    border: double 5px darkred; 
+    width: 20em;
+    padding: .5em 0;
+    text-align: justify;
+    margin: 1em 2em 1em 5em;
+}
+.figc1, .figc2, .figt {
+    margin: 0 auto;
+    text-align:center;
+    text-indent:0%;
+}
+
+.figc1 small, .figc2 small, .figt small {
+  display: block;
+}
+
+/*From Lovecraft HTML*/
+.sp1 {
+    font-size: 150%;
+}
+
+.sp2 {
+    display: none;
+}
+
+.sp3 {
+    font-size: 200%;
+}
+
+.bk1 {
+    margin: 0 auto 2em; 
+    width: 32em;
+}
+
+.bk2 {
+    text-align: left; 
+    font-size: xx-large;
+}
+
+/* Varny vampire */
+
+.floatl {
+    margin: 0 auto;
+    text-align:center;
+}
+
+.poem {
+    font-family: "Goudy Old Style",  "Book Antiqua", serif
+}
