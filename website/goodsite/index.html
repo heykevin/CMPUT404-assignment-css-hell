@@ -5,27 +5,28 @@
 		<link rel="stylesheet" href="assets/fonts/font-awesome-4.6.3/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script>
-			// From https://css-tricks.com/snippets/jquery/smooth-scrolling/
-			$(function() {
-				$('a[href*="#"]:not([href="#"])').click(function() {
-					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-					if (target.length) {
-						$('html, body').animate({
-						scrollTop: target.offset().top
-						}, 1000);
-						return false;
-					}
-					}
+				// From https://css-tricks.com/snippets/jquery/smooth-scrolling/
+				$(function() {
+					$('a[href*="#"]:not([href="#"])').click(function() {
+						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html, body').animate({
+							scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+						}
+					});
 				});
-			});
-		</script>
+			</script>
 		<meta charset="utf-8" />
 		<title>Kevin Tang</title>
 	</head>
-   <body>
-	   <nav>
+
+	<body>
+		<nav>
 			<div class="navbar">
 				<ul>
 					<li><a href="#intro">About Me</a></li>
@@ -43,23 +44,19 @@
 							<h2>Hi I'm <span class="name"> Kevin </span></h2>
 						</div>
 						<div class="profile">
-							<p>I am a software developer who loves solving problems through
-								efficient and clean solutions. I use modern and sophisticated
+							<p>I am a software developer who loves solving problems through efficient and clean solutions. I use modern and sophisticated
 								technologies that best suit today's webapps and apps.
-								<br><br>
-								Currently, I am enrolled at the University of Alberta
-								finishing my Computing Science degree in Canada. I am set 
-								to graduate 2017 and am looking for employment opportunities. 
-								Feel free to contact me if you have any questions or have any 
-								positions available.I am willing to relocate if needed.
+								<br><br> Currently, I am enrolled at the University of Alberta finishing my Computing Science degree in Canada. I
+								am set to graduate 2017 and am looking for employment opportunities. Feel free to contact me if you have any questions
+								or have any positions available.I am willing to relocate if needed.
 							</p>
 							<span class="profile-pic">
-								<img src="images/profile.png">
-							</span>
+									<img src="images/profile.png">
+								</span>
 						</div>
 					</div>
 				</section>
-				
+
 				<section id="first" class="main">
 					<div class="content">
 						<div class="sec-header">
@@ -68,63 +65,61 @@
 						<ul class="projects">
 							<li class="proj-description">
 								<span class="logo-image">
-									<img src="images/intuit_blue.gif">
-								<span>
-								<!-- The breaks in the middle of text is pretty dumb 
-								but I've already spent too much time here'-->
-								<p class="hover-text">
-									<b>Software Engineer Intern</b><br>
-									<b>Edmonton CA</b><br><br>
-									20 month long internship at Intuit where I developed and 
-									deployed 3 web applications <br> on the QuickBooks
-									Online platform.
-									<br><br>
-									Technologies: React, Relay,<br> Bootstrap, NodeJS
-								</p>
-							</li>
-							<li class="proj-description">
-								<span class="logo-image">
-									<img src="images/UA-COLOUR.png">
-								<span>
-								<p class="hover-text">
-									<b>Summer Research Student</b><br>
-									<b>Edmonton CA</b><br><br>
-									Worked under Dr. Kirst King-Jones <br>to conduct a genetic 
-									screen of Drosophila. Project went on to be published in
-									Developmental Cell June 2016.
-								</p>
-							</li>
-						</ul>
-					</div>
-				</section>
-				
-				<section id="second" class="main">
-					<div class="content">
-						<div class="sec-header">
-							<h2>Skills & Technologies</h2>
+										<img src="images/intuit_blue.gif">
+									<span>
+									<!-- The breaks in the middle of text is pretty dumb 
+									but I've already spent too much time here'-->
+									<p class="hover-text">
+										<b>Software Engineer Intern</b><br>
+										<b>Edmonton CA</b><br><br>
+										20 month long internship at Intuit where I developed and 
+										deployed 3 web applications <br> on the QuickBooks
+										Online platform.
+										<br><br>
+										Technologies: React, Relay,<br> Bootstrap, NodeJS
+									</p>
+								</li>
+								<li class="proj-description">
+									<span class="logo-image">
+										<img src="images/UA-COLOUR.png">
+									<span>
+									<p class="hover-text">
+										<b>Summer Research Student</b><br>
+										<b>Edmonton CA</b><br><br>
+										Worked under Dr. Kirst King-Jones <br>to conduct a genetic 
+										screen of Drosophila. Project went on to be published in
+										Developmental Cell June 2016.
+									</p>
+								</li>
+							</ul>
 						</div>
+					</section>
+					
+					<section id="second" class="main">
+						<div class="content">
+							<div class="sec-header">
+								<h2>Skills & Technologies</h2>
+							</div>
 							<ul class="skill-list">
 								<li class="skill-item">
 									<span class="skill-logo">
 										<i class="fa fa-code" aria-hidden="true"></i>
 									</span>
-									<!-- The breaks in the middle of text is pretty dumb 
+								<!-- The breaks in the middle of text is pretty dumb 
 									but I've already spent too much time here'-->
-									<p>
-										<span class="skill-header">Software Development</span><br><br>
-										I'm mostly focused on software development and have developed
-										applications with a team and with other students. I currently 
-										have experience with these languages:
-									</p>
-									<ul class="list-half">
-										<li>Javascript</li>
-										<li>Python</li>
-										<li>C/C++</li>
-										<li>Java</li>
-										<li>SQL</li>											
-									</ul>
-									<p>
-										<!--I also have experience with the following patterns and technologies:
+								<p>
+									<span class="skill-header">Software Development</span><br><br> I'm mostly focused on software development and have
+									developed applications with a team and with other students. I currently have experience with these languages:
+								</p>
+								<ul class="list-half">
+									<li>Javascript</li>
+									<li>Python</li>
+									<li>C/C++</li>
+									<li>Java</li>
+									<li>SQL</li>
+								</ul>
+								<p>
+									<!--I also have experience with the following patterns and technologies:
 									</p>
 									<ul class="list-half">
 										<li>MySQL</li>
@@ -132,91 +127,87 @@
 										<li>MVC</li>
 										<li>Object Oriented Programming</li>
 									</ul>-->
-								</li>
-								<li class="skill-item">
-									<span class="skill-logo">
+							</li>
+							<li class="skill-item">
+								<span class="skill-logo">
 										<i class="fa fa-html5" aria-hidden="true"></i>
 									</span>
-									<p>
-										<span class="skill-header">Full Stack Web Development</span><br><br>
-										I am familiar with modern web technologies that are currently being used.
-										I have developed many full stack web applications and am well versed in 
-										the following technologies:
-									</p>
-									<div class="web-list-wrapper">
-										<ul class="list-half">
-											<li>HTML5</li>
-											<li>CSS3/Sass</li>
-											<li>Javascript/ES6</li>
-											<li>Gulp/Grunt</li>
-											<li>Webpack</li>											
-										</ul>
-										<ul class="list-half">
-											<li>Flux/Reflux</li>
-											<li>React</li>
-											<li>Dojo</li>
-											<li>Django</li>
-											<li>NodeJS</li>
-										</ul>
-									</div>
-								</li>
-									<li class="skill-item">
-									<span class="skill-logo">
+								<p>
+									<span class="skill-header">Full Stack Web Development</span><br><br> I am familiar with modern web technologies that
+									are currently being used. I have developed many full stack web applications and am well versed in the following technologies:
+								</p>
+								<div class="web-list-wrapper">
+									<ul class="list-half">
+										<li>HTML5</li>
+										<li>CSS3/Sass</li>
+										<li>Javascript/ES6</li>
+										<li>Gulp/Grunt</li>
+										<li>Webpack</li>
+									</ul>
+									<ul class="list-half">
+										<li>Flux/Reflux</li>
+										<li>React</li>
+										<li>Dojo</li>
+										<li>Django</li>
+										<li>NodeJS</li>
+									</ul>
+								</div>
+							</li>
+							<li class="skill-item">
+								<span class="skill-logo">
 										<i class="fa fa-android" aria-hidden="true"></i>
 									</span>
-									<p>
-										<span class="skill-header">Mobile Development</span><br><br>
-										In a mobile world it is important to build responsive 
-										webpages and mobile apps. I have experience with the follow:
-									</p>
-									<ul class="list-half">
-										<li>Android Studio</li>
-										<li>Android</li>
-										<li>Android Wear</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
+								<p>
+									<span class="skill-header">Mobile Development</span><br><br> In a mobile world it is important to build responsive
+									webpages and mobile apps. I have experience with the follow:
+								</p>
+								<ul class="list-half">
+									<li>Android Studio</li>
+									<li>Android</li>
+									<li>Android Wear</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
-			</div>	
-					<section id="third" class="footer">
-			<div class="sec-header">
-				<h3>Contact Me</h3>
 			</div>
-			<div class="footer-content">
-				<div class="footer-contact-me">
-					<span class="footer-name"> Kevin Tang </span><br><br>
-						<p> 
-							If you'd like to discuss any opportunities you may have
-							or if you have any positions available, please
-							feel free to contact me. I am willing to relocate. <br> <br>
+			<section id="third" class="footer">
+				<div class="sec-header">
+					<h3>Contact Me</h3>
+				</div>
+				<div class="footer-content">
+					<div class="footer-contact-me">
+						<span class="footer-name"> Kevin Tang </span><br><br>
+						<p>
+							If you'd like to discuss any opportunities you may have or if you have any positions available, please feel free to contact
+							me. I am willing to relocate. <br> <br>
 						</p>
-						<p> 
+						<p>
 							e: kevin.hm.tang@gmail.com
 						</p>
 					</div>
-				<div class="footer-contact-links">
-					<div class="location">
-						<a href="https://www.google.ca/maps/place/Edmonton,+AB/@53.5559997,-113.6340298,11z">
-							<i class="fa fa-map-pin" aria-hidden="true"></i> 
-							<span>Edmonton Canada</span> <br>
-						</a>
-					</div>
-					<div class="">
-						<a href="https://github.com/heykevin">
-							<i class="fa fa-github" aria-hidden="true"></i>
-							<span>HeyKevin</span> <br>
-						</a>
-					</div>
-					<div class="linkedin">
-						<a href="https://www.linkedin.com/in/kevin-tang-15477a121">
-							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-							<span>Kevin Tang</span> <br>
-						</a>
+					<div class="footer-contact-links">
+						<div class="location">
+							<a href="https://www.google.ca/maps/place/Edmonton,+AB/@53.5559997,-113.6340298,11z">
+								<i class="fa fa-map-pin" aria-hidden="true"></i>
+								<span>Edmonton Canada</span> <br>
+							</a>
+						</div>
+						<div class="github">
+							<a href="https://github.com/heykevin">
+								<i class="fa fa-github" aria-hidden="true"></i>
+								<span>HeyKevin</span> <br>
+							</a>
+						</div>
+						<div class="linkedin">
+							<a href="https://www.linkedin.com/in/kevin-tang-15477a121">
+								<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+								<span>Kevin Tang</span> <br>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>	
+			</section>
 		</div>
 	</body>
 </html>
